@@ -1,15 +1,16 @@
 using System;
 using Xunit;
+using Core;
 
-namespace Core
+namespace CoreTest
 {
     public class UnitTest1
     {
         [Fact]
         public void Test1()
         {
-            Assert.Equal(1, 3);
-            Console.WriteLine("Hello World");
+            Core.Delegate dlg = new Core.Delegate();
+            //Assert.Equal(dlg.TestDelegate("ABC"), $"Xin chao ABC");
         }
     }
 }
